@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/">
+
+    <title>Altask Systechs</title>
+    <!--Style Sheets-->
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link href="altask/styles/font-awesome.min.css" rel="stylesheet">
+    <link href="altask/styles/styles.css" rel="stylesheet">
+    <link href="altask/styles/responsive.css" rel="stylesheet">
+    <link href="altask/styles/revolution/settings.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/devStyle.css"> -->
+    <!--Animation CSS-->
+    <!-- <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animation.css"> -->
+
+    <!-- ANGULAR CUSTOM -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
+    <!-- @if NODE_ENV='production' -->
+    <!-- <script src="js/index.js"></script> -->
+    <!-- @endif -->
+    
+    <!-- @if NODE_ENV='dev' -->
+
+    <!--ANGULAR APP JS-->
+    <script src="altask/js/index.js"></script>
+    <script src="altask/js/app/main.js"></script>
+
+    <!--ANGULAR CONTROLLER JS-->
+    <script src="altask/js/app/controllers/mainController.js"></script>
+    <script src="altask/js/app/controllers/productsController.js"></script>
+    
+    <!-- @endif -->
+</head>
+
+<body ng-app="main" class="page-header-fixed" ng-controller="mainController">
+
+    <!--Ui Container-->
+    <div ui-view class="mainView"></div>
+
+</body>
+
+</html>
